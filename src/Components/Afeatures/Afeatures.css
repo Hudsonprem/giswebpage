@@ -1,0 +1,138 @@
+.parent {
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 7%;
+  justify-items: center;
+  justify-content: center;
+}
+
+.div1 {
+  margin: 5%;
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div2 {
+  margin: 5%;
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div3 {
+  margin: 5%;
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div4 {
+  margin: 5%;
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div5 {
+  margin: 5%;
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div6 {
+  margin: 5%;
+  grid-area: 3 / 3 / 4 / 4;
+}
+.div7 {
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.Featuretitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.Featuredesc {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.AFeatures-title {
+  text-align: center;
+  color: #005676;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 5%;
+}
+
+.AFeatures-desc {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: 0.23px;
+  color: #4a4a4a;
+  padding: 1% 2%;
+}
+
+@media only screen and (max-width: 984px) {
+  .parent {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+  .div1 {
+    grid-area: 2 / 1 / 2 / 2;
+  }
+  .div2 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .div3 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .div4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .div5 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .div6 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .div7 {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+}
+@media only screen and (max-width: 654px) {
+  .parent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
+    
+  }
+
+  .div1 {
+    grid-area: auto;
+  }
+  .div2 {
+    grid-area: auto;
+  }
+  .div3 {
+    grid-area: auto;
+  }
+  .div4 {
+    grid-area: auto;
+  }
+  .div5 {
+    grid-area: auto;
+  }
+  .div6 {
+    grid-area: auto;
+  }
+  .div7 {
+    grid-area: auto;
+  }
+}

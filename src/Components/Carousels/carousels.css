@@ -1,0 +1,34 @@
+
+
+.main{
+    background-image: url("./theme.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content{
+
+    padding: 90px;
+    text-align: center;
+    color: #b7e517;
+    font-size: 20px;
+    margin:2%;
+}
+
+
+.buts{
+    text-decoration: none;
+    color: cornsilk;
+    margin: 2%;
+    padding: 7px 15px;
+    background: teal;
+    border: 2px solid #006d6d;
+    border-radius:1em;
+}
+

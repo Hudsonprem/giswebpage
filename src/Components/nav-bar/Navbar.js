@@ -23,24 +23,19 @@ function Navbar() {
 
 
   return (
-    <div>
+    <div className= "box">
      <nav>
         <ul className = "menu">
-            <li className="logo"> <h1>GeoMapweb</h1></li>
+            <li className="logo"> <h2>GeoMapweb</h2></li>
             <li className="items"> <a href="#"> Home</a>      </li>
             <li className="items"> <a href="#"> Features</a>  </li>
             <li className="items"> <a href="#"> Plans & Pricing</a></li>
             <li className="items"> <a href="#"> Blog</a>       </li>
-            <li className="items button signIn"> <a href="#"> Sign In</a>    </li>
+            <li className="items button "> <a href="#"> Sign In</a>    </li>
             <li className="items button secondary"> <a href="#"> Sign Up</a>    </li>
             <li className="toggle"> <span className="bars">  </span></li>
         </ul>
-
-
-     
      </nav>
-    
-     
     </div>
   );
 }
