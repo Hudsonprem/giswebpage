@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import './App.css';
 import Navbar from "./Components/nav-bar/Navbar";
 import Carouselbox from "./Components/Carousels/Carousels";
@@ -9,11 +9,16 @@ import Tabled from "./Components/Table/tabled";
 import Contact from "./Components/contact/contact";
 import Footer from "./Components/footer/Footer";
 import Afeatures from "./Components/Afeatures/AFeatures";
+import Login from "./Components/SignIn/SignIn";
+import SignUp from "./Components/SignUp/SignUp";
 
 function App() {
+  const [value, setValue] = useState("0");
+
   return (
     <div >
       <Navbar />
+     
       { 1 ===1 ? (
         <div>
         <Carouselbox />
@@ -24,6 +29,8 @@ function App() {
         <Contact />
         <Footer /> 
      </div>) : (
+      <Login />
+      <SignUp />
       <Footer />
      ) }
      

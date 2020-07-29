@@ -12,11 +12,12 @@ function Carouselbox()  {
 
     return (    
           
-        <Carousel autoPlay={false} showArrows={false} showStatus={false} showThumbs={false} dynamicHeight={false}>
+        <Carousel className="carousel"  showArrows={false} showStatus={false} showThumbs={false} dynamicHeight={false}>
+              
                 <div className="main">
                 <Container>
                     <Row>
-                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Web MAPPING made simple for any domain<br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
+                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Web <b>MAPPING</b> made simple for any domain<br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
                         <Col sm={12} lg={6} ><img src={require("./carousel.svg")} alt="hello" height="300" /></Col>
                     </Row>
                 </Container>                   
@@ -25,7 +26,7 @@ function Carouselbox()  {
                 <div className="main">
                 <Container>
                     <Row>
-                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Configurable MAP INTERFACE and TOOLS<br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
+                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Configurable <b>MAP INTERFACE</b> and <b>TOOLS</b><br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
                         <Col sm={12} lg={6} ><img src={require("./Carousel1.svg")} alt="hello" height="300" /></Col>
                     </Row>
                 </Container>    
@@ -34,7 +35,7 @@ function Carouselbox()  {
                 <div className="main ">
                 <Container>
                     <Row>
-                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Perform Analysis on your LOCATION DATA with ease to obtain meaningful business insights<br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
+                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Publish your <b>MAP DATA</b> to web and make it available for public/private users<br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
                         <Col sm={12} lg={6} ><img src={require("./Carousel2.svg")} alt="hello" height="300" /></Col>
                     </Row>
                 </Container>    
@@ -43,7 +44,7 @@ function Carouselbox()  {
                 <div className="main">
                 <Container>
                     <Row>
-                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Web MAPPING made simple for any domain<br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
+                        <Col className="content" sm={12} lg={6} sm={{ order: 'last' }} lg={{ order: 'first' }}>Perform Analysis on your <b>LOCATION DATA</b> with ease to obtain meaningful business insights<br /><br /><a className="buts" href="#"> SIGN UP FOR FREE</a></Col>
                         <Col sm={12} lg={6} ><img src={require("./Carousel3.svg")} alt="hello" height="300" /></Col>
                     </Row>
                 </Container> 
