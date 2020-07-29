@@ -29,9 +29,13 @@ function App() {
         <Contact />
         <Footer /> 
      </div>) : (
-      <Login />
+       <div>
+       <Login />
       <SignUp />
       <Footer />
+       </div>
+      
+      
      ) }
      
      
