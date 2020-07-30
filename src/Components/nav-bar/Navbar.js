@@ -35,7 +35,7 @@ function Navbar(props) {
     <div className= "box">
      <nav>
         <ul className = "menu">
-            <li className="logo"> <img src={require("./gwm_web_white.svg")} alt="img" /></li>
+            <li className="logo"> <img className="main-icon" src={require("./gwm_web_white.svg")} alt="img" /></li>
             <li className="items"> <a href="#"> HOME</a>      </li>
             <li className="items"> <a href="#AFeature"> FEATURES</a>  </li>
             <li className="items"> <a href="#Plans"> PLANS & PRICING</a></li>

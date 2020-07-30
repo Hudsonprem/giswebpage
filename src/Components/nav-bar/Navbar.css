@@ -137,7 +137,8 @@ nav {
 
 
 /*For desktop menu*/
-@media all and (min-width: 998px)
+/* @media  (min-width: 998px) */
+@media only screen and (min-width: 998px)
 {
     .items
     {
@@ -168,10 +169,28 @@ nav {
         order:3;
     }
 
-   
-    .menu li a {
 
+
+}
+
+@media only screen and (max-width: 496px)
+{
+    .toggle
+    {
+        margin: 3%;
     }
-  
+    .logo{
+        order:3;
+        width: 80%;
+        display: block;
+        margin: 0% 20%;
+    }
 
+   .main-icon {
+
+        margin: 0% 0px 4% -17px;
+    }
+    .items.button{
+        order:2;
+    }
 }
