@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "faa7b4c59a8bc2d6e169b5e0e81eb7a3",
+    "revision": "cfb51196d35573ad5251da5afac9f69f",
     "url": "/giswebpage/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/giswebpage/static/css/2.c7296f5a.chunk.css"
   },
   {
-    "revision": "7544bf79b9a2f2aa802a",
-    "url": "/giswebpage/static/css/main.f80edc8a.chunk.css"
+    "revision": "cf4c113cd188f3228425",
+    "url": "/giswebpage/static/css/main.3dd286fb.chunk.css"
   },
   {
     "revision": "9d97eb53d4a1b8584fe6",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/giswebpage/static/js/2.fcaedf54.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7544bf79b9a2f2aa802a",
-    "url": "/giswebpage/static/js/main.6d9f85f8.chunk.js"
+    "revision": "cf4c113cd188f3228425",
+    "url": "/giswebpage/static/js/main.50579d20.chunk.js"
   },
   {
     "revision": "915f22a23f3eee1c350d",
