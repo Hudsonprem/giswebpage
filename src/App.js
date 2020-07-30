@@ -13,29 +13,66 @@ import Login from "./Components/SignIn/SignIn";
 import SignUp from "./Components/SignUp/SignUp";
 
 function App() {
-  const [value, setValue] = useState("0");
+  const [value, setValue] = useState(0);
+  const [value2, setValue2] = useState(2);
+
+  function onSignClick()
+  {
+    if(value === 0)
+    {
+      setValue(1);
+    }
+    else{
+      setValue(0); 
+    }
+
+  }
+
+  function onSignInClick()
+  {
+    if(value === 2 )
+    {
+      setValue(0);
+    }
+    else{
+      setValue(2); 
+    }
+  
+  }
 
   return (
     <div >
-      <Navbar />
-     
-      { 1 ===1 ? (
+      <Navbar  
+      id="id1"
+      onChanged={onSignClick}
+      onChanged1={onSignInClick}
+      />
+
+      { value === 0 ? (
         <div>
-        <Carouselbox />
+        <Carouselbox id="id3"
+          onChanged={onSignClick}/>
          <Banner />
         <Afeatures />
-        <MemberShipCards />
+        <MemberShipCards 
+          id="id2"
+          onChanged={onSignClick}
+        />
         <Tabled />
         <Contact />
         <Footer /> 
-     </div>) : (
+     </div>) : ( value === 1 ? ( 
        <div>
-       <Login />
-      <SignUp />
+      
+       <SignUp id="id4"
+          onChanged={onSignClick}/>
       <Footer />
-       </div>
-      
-      
+       </div>) : (
+       <div>
+       <Login id="id5"
+          onChanged={onSignClick}/>
+      <Footer />
+       </div>) 
      ) }
      
      

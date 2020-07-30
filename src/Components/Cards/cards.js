@@ -5,12 +5,17 @@ import ToggleButton from "react-bootstrap/ToggleButton";
 import Button from "react-bootstrap/Button";
 import "./cards.css";
 
-function MemberShipCards() {
+function MemberShipCards(props) {
   const [radioValue, setRadioValue] = useState("0");
   const radios = [
     { name: "Pay Monthly", value: "0" },
     { name: "Pay yearly", value: "1" }
   ];
+
+  function handleClick() {
+    props.onChanged();
+  }
+
 
   const rates = [
     {
@@ -64,7 +69,7 @@ function MemberShipCards() {
           
         </div>
 
-        <Button className="button-getstart" variant="success">Get started</Button>
+        <Button onClick={handleClick} className="button-getstart" variant="success">Get started</Button>
         <br />
         
       </div>
@@ -118,7 +123,7 @@ function MemberShipCards() {
          
         </div>
 
-        <Button className="button-getstart" variant="success">Get started</Button>
+        <Button onClick={handleClick} className="button-getstart" variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
@@ -179,7 +184,7 @@ function MemberShipCards() {
        
         </div>
 
-        <Button className="button-getstart" style={{marginTop: "-12px"}} variant="success">Get started</Button>
+        <Button onClick={handleClick} className="button-getstart" style={{marginTop: "-12px"}} variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
@@ -241,7 +246,7 @@ function MemberShipCards() {
          
         </div>
 
-        <Button className="button-getstart" variant="success">Get started</Button>
+        <Button onClick={handleClick} className="button-getstart" variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
@@ -250,7 +255,7 @@ function MemberShipCards() {
   );
 
   return (
-    <div>
+    <div id="Plans">
       <h1 className="titleComparison">
         Choose the right plan that best suits your requirements
       </h1>

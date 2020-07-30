@@ -13,7 +13,7 @@
 }
 
 .content{
-
+    text-decoration: none;
     padding: 90px;
     text-align: center;
     color: #b7e517;
@@ -30,5 +30,8 @@
     background: #23a74e;
     border: 2px solid #006d6d;
     border-radius: 15px;
+}
+.buts:hover{
+    text-decoration: none;
 }
 

@@ -21,7 +21,7 @@ function Tabled() {
     "Overlay Shapefile Layer in Runtime for Visualization",
     "Overlay KML Layer in Runtime for Visualization",
     "Admin Interface",
-    "OColers"
+    "Others"
   ];
 
   const title2 = ["Shapefile", "GeoJSON", "KML", "WMS Layer"];

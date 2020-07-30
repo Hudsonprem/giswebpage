@@ -1,8 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import "./signIn.css";
 
-export default class Login extends Component {
-    render() {
+function Login(props) {
+    
+    function handleClick() {
+        props.onChanged();
+      }
+
         return (
             <div className ="signIn-div-background"> <form className="signIn-div">
                 <h3>Sign In</h3>
@@ -26,10 +30,13 @@ export default class Login extends Component {
 
                 <button type="submit" className="btn btn-success btn-block">Submit</button>
                 <p className="forgot-password text-center">
-                New to GeoWebMap? <a href="#">SIGN UP</a>
+                New to GeoWebMap? <a href="#" onClick={handleClick}>SIGN UP</a>
                 </p>
             </form>
         </div>
         );
     }
-}
+
+
+
+export default Login;

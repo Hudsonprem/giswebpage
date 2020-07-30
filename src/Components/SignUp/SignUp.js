@@ -1,7 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./siginUp.css"
-export default class SignUp extends Component {
-    render() {
+
+function SignUp(props) {
+
+    function handleClick() {
+        props.onChanged();
+      }
+
+  
         return (
             <div className ="signUp-div-background"> <form className="signUp-div">
         
@@ -27,12 +33,14 @@ export default class SignUp extends Component {
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
-                <button type="submit" className="btn btn-success btn-block">Sign Up</button>
+                <button type="submit" className="btn btn-success btn-block" >Sign Up</button>
                 <p className="forgot-password text-right">
-                    Already registered <a href="#">sign in?</a>
+                    Already registered <a href="#" onClick={handleClick}>sign in?</a>
                 </p>
             </form>
             </div>
         );
     }
-}
+
+
+export default SignUp;

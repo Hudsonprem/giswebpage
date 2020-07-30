@@ -3,7 +3,7 @@ import "./Afeatures.css";
 
 function Afeatures() {
   return (
-    <div style={{ backgroundColor: "#f4fff8" }}>
+    <div id="AFeature" style={{ backgroundColor: "#f4fff8" }}>
       <div className="AFeatures-title">Amazing Features</div>
       <div className="AFeatures-desc">
         GeoWebMap is bundled with some amazing web mapping features and

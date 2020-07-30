@@ -4,7 +4,7 @@ import "./banners.css";
 function Banner() {
   return (
     <div>
-      <div class="banner">
+      <div className="banner">
         <div className="icon-ind">
           <img
             src={require("./individual_h.svg")}

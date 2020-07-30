@@ -2,7 +2,15 @@ import React from 'react';
 import './Navbar.css';
 import $ from "jquery";
 
-function Navbar() {
+function Navbar(props) {
+
+    function handleClick() {
+        props.onChanged();
+      }
+      function handleClick1() {
+        props.onChanged1();
+      }
+
 
     $(function()
     {
@@ -29,11 +37,11 @@ function Navbar() {
         <ul className = "menu">
             <li className="logo"> <img src={require("./gwm_web_white.svg")} alt="img" /></li>
             <li className="items"> <a href="#"> HOME</a>      </li>
-            <li className="items"> <a href="#"> FEATURES</a>  </li>
-            <li className="items"> <a href="#"> PLANS & PRICING</a></li>
+            <li className="items"> <a href="#AFeature"> FEATURES</a>  </li>
+            <li className="items"> <a href="#Plans"> PLANS & PRICING</a></li>
             <li className="items"> <a href="#"> BLOG</a>       </li>
-            <li className="items button "> <a href="#"> SIGN IN</a>    </li>
-            <li className="items button secondary"> <a href="#"> SIGN UP</a>    </li>
+            <li className="items button " onClick={handleClick1}> <a href="#"> SIGN IN</a>    </li>
+            <li className="items button secondary" onClick={handleClick}> <a href="#"> SIGN UP</a>    </li>
             <li className="toggle"> <span className="bars">  </span></li>
         </ul>
      </nav>
