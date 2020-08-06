@@ -13,70 +13,57 @@ import Login from "./Components/SignIn/SignIn";
 import SignUp from "./Components/SignUp/SignUp";
 
 function App() {
-  const [value, setValue] = useState(0);
-  const [value2, setValue2] = useState(2);
-
-  function onSignClick()
-  {
-    if(value === 0)
-    {
-      setValue(1);
-    }
-    else{
-      setValue(0); 
-    }
-
-  }
+  const [issignIn, setsignIn] = useState(false);
+  const [issignUp, setsignUp] = useState(false);
 
   function onSignInClick()
   {
-    if(value === 2 )
-    {
-      setValue(0);
-    }
-    else{
-      setValue(2); 
-    }
-  
+    setsignIn(true);
+    setsignUp(false);
   }
+
+  function onSignUpClick()
+  {
+    setsignIn(false);
+    setsignUp(true);
+  }
+
+  function onClick()
+  {
+    setsignIn(false);
+    setsignUp(false);
+  }
+
 
   return (
     <div >
       <Navbar  
       id="id1"
-      onChanged={onSignClick}
-      onChanged1={onSignInClick}
+      onSignUpChanged={onSignUpClick}
+      onSignInChanged={onSignInClick}
+      onClicked = {onClick}
       />
-
-      { value === 0 ? (
-        <div>
-        <Carouselbox id="id3"
-          onChanged={onSignClick}/>
-         <Banner />
-        <Afeatures />
-        <MemberShipCards 
-          id="id2"
-          onChanged={onSignClick}
-        />
-        <Tabled />
-        <Contact />
-        <Footer /> 
-     </div>) : ( value === 1 ? ( 
-       <div>
-      
-       <SignUp id="id4"
-          onChanged={onSignClick}/>
-      <Footer />
-       </div>) : (
-       <div>
-       <Login id="id5"
-          onChanged={onSignClick}/>
-      <Footer />
-       </div>) 
-     ) }
+       {(issignIn == true) ? 
+            (<Login  id="login"
+            onSignInChanged={onSignUpClick}/>)
+            :(issignUp == true) ? (<SignUp id="register"
+            onSignUpChanged={onSignInClick} />) : 
+            (
+              <div>
+              <Carouselbox id="id3"
+                onSignUpChanged={onSignUpClick}/>
+                <Banner />
+              <Afeatures />
+              <MemberShipCards 
+                id="id2"
+                onSignUpChanged={onSignUpClick}
+              />
+              <Tabled />
+              <Contact />
+              </div>
+            )}      
      
-     
-     
+     <Footer />
     </div>
   );
 }

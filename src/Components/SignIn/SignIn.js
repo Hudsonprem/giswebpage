@@ -4,20 +4,21 @@ import "./signIn.css";
 function Login(props) {
     
     function handleClick() {
-        props.onChanged();
+        props.onSignInChanged();
       }
 
         return (
-            <div className ="signIn-div-background"> <form className="signIn-div">
+            <div className ="signIn-div-background"> 
+            <form className="signIn-div" action="/login" >
                 <h3>Sign In</h3>
 
                 <div className="form-group">
-                    <label>Email address</label>
+                    <label htmlFor="email-address">Email address</label>
                     <input type="email" className="form-control" placeholder="Enter email" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
+                    <label htmlFor="password">Password</label>
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 

@@ -12,8 +12,8 @@ function MemberShipCards(props) {
     { name: "Pay yearly", value: "1" }
   ];
 
-  function handleClick() {
-    props.onChanged();
+  function handleSignUp() {
+    props.onSignUpChanged();
   }
 
 
@@ -69,7 +69,7 @@ function MemberShipCards(props) {
           
         </div>
 
-        <Button onClick={handleClick} className="button-getstart" variant="success">Get started</Button>
+        <Button onClick={handleSignUp} className="button-getstart" variant="success">Get started</Button>
         <br />
         
       </div>
@@ -123,7 +123,7 @@ function MemberShipCards(props) {
          
         </div>
 
-        <Button onClick={handleClick} className="button-getstart" variant="success">Get started</Button>
+        <Button onClick={handleSignUp} className="button-getstart" variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
@@ -184,7 +184,7 @@ function MemberShipCards(props) {
        
         </div>
 
-        <Button onClick={handleClick} className="button-getstart" style={{marginTop: "-12px"}} variant="success">Get started</Button>
+        <Button onClick={handleSignUp} className="button-getstart" style={{marginTop: "-12px"}} variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
@@ -246,7 +246,7 @@ function MemberShipCards(props) {
          
         </div>
 
-        <Button onClick={handleClick} className="button-getstart" variant="success">Get started</Button>
+        <Button onClick={handleSignUp} className="button-getstart" variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>

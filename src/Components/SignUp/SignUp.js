@@ -4,7 +4,7 @@ import "./siginUp.css"
 function SignUp(props) {
 
     function handleClick() {
-        props.onChanged();
+        props.onSignUpChanged();
       }
 
   
@@ -14,7 +14,7 @@ function SignUp(props) {
                 <h3 className="text-center">Sign Up</h3>
 
                 <div className="form-group">
-                    <label>First name</label>
+                    <label >First name</label>
                     <input type="text" className="form-control" placeholder="First name" />
                 </div>
 
@@ -24,12 +24,12 @@ function SignUp(props) {
                 </div>
 
                 <div className="form-group">
-                    <label>Email address</label>
+                    <label htmlFor="email-address">Email address</label>
                     <input type="email" className="form-control" placeholder="Enter email" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
+                    <label htmlFor="password">Password</label>
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 

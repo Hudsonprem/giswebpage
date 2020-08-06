@@ -4,11 +4,16 @@ import $ from "jquery";
 
 function Navbar(props) {
 
-    function handleClick() {
-        props.onChanged();
+    function handleSignUp() {
+        props.onSignUpChanged();
       }
-      function handleClick1() {
-        props.onChanged1();
+      function handleSignIn() {
+        props.onSignInChanged();
+      }
+
+      function handleClick()
+      {
+        props.onClicked();
       }
 
 
@@ -36,12 +41,12 @@ function Navbar(props) {
      <nav>
         <ul className = "menu">
             <li className="logo"> <img className="main-icon" src={require("./gwm_web_white.svg")} alt="img" /></li>
-            <li className="items"> <a href="#"> HOME</a>      </li>
-            <li className="items"> <a href="#AFeature"> FEATURES</a>  </li>
-            <li className="items"> <a href="#Plans"> PLANS & PRICING</a></li>
-            <li className="items"> <a href="#"> BLOG</a>       </li>
-            <li className="items button " onClick={handleClick1}> <a href="#"> SIGN IN</a>    </li>
-            <li className="items button secondary" onClick={handleClick}> <a href="#"> SIGN UP</a>    </li>
+            <li className="items"> <a onClick={handleClick} href="#" pagescroll id> HOME</a>      </li>
+            <li className="items"> <a onClick={handleClick} href="#AFeature"> FEATURES</a>  </li>
+            <li className="items"> <a onClick={handleClick} href="#Plans"> PLANS & PRICING</a></li>
+            <li className="items"> <a onClick={handleClick} href="#"> BLOG</a>       </li>
+            <li className="items button " onClick={handleSignIn}> <a href="#"> SIGN IN</a>    </li>
+            <li className="items button secondary" onClick={handleSignUp}> <a href="#"> SIGN UP</a>    </li>
             <li className="toggle"> <span className="bars">  </span></li>
         </ul>
      </nav>
