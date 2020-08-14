@@ -1,70 +1,52 @@
-import React, { useState } from "react";
+import React from "react";
 import './App.css';
-import Navbar from "./Components/nav-bar/Navbar";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Carouselbox from "./Components/Carousels/Carousels";
 import Banner from "./Components/logo/banners";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import MemberShipCards from "./Components/Cards/cards.js";
 import Tabled from "./Components/Table/tabled";
 import Contact from "./Components/contact/contact";
+import Login from "./Components/Auth/SignIn/SignIn";
+import SignUp from "./Components/Auth/SignUp/SignUp";
+import Navbar from "./Components/nav-bar/Navbar";
 import Footer from "./Components/footer/Footer";
 import Afeatures from "./Components/Afeatures/AFeatures";
-import Login from "./Components/SignIn/SignIn";
-import SignUp from "./Components/SignUp/SignUp";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import Protected from "./Components/Auth/ProtectorFiles/protected";
+import Home from "./Components/Auth/Home";
+import { Switch , Route } from "react-router-dom";
 
 function App() {
-  const [issignIn, setsignIn] = useState(false);
-  const [issignUp, setsignUp] = useState(false);
-
-  function onSignInClick()
-  {
-    setsignIn(true);
-    setsignUp(false);
+  function Main() {
+    return (
+      <div>
+           <Carouselbox />
+          <Banner />
+          <Afeatures />
+          <MemberShipCards />
+          <Tabled />
+          <Contact />
+      </div>
+    );
   }
-
-  function onSignUpClick()
-  {
-    setsignIn(false);
-    setsignUp(true);
-  }
-
-  function onClick()
-  {
-    setsignIn(false);
-    setsignUp(false);
-  }
-
-
+ 
   return (
+    
     <div >
-      <Navbar  
-      id="id1"
-      onSignUpChanged={onSignUpClick}
-      onSignInChanged={onSignInClick}
-      onClicked = {onClick}
-      />
-       {(issignIn == true) ? 
-            (<Login  id="login"
-            onSignInChanged={onSignUpClick}/>)
-            :(issignUp == true) ? (<SignUp id="register"
-            onSignUpChanged={onSignInClick} />) : 
-            (
-              <div>
-              <Carouselbox id="id3"
-                onSignUpChanged={onSignUpClick}/>
-                <Banner />
-              <Afeatures />
-              <MemberShipCards 
-                id="id2"
-                onSignUpChanged={onSignUpClick}
-              />
-              <Tabled />
-              <Contact />
-              </div>
-            )}      
-     
-     <Footer />
-    </div>
+    <Navbar />
+   <Switch >
+          <Route exact path = "/" component ={Main} />
+          <Route exact path = "/login" component ={Login} />
+          <Route exact path = "/Register" component ={SignUp} />
+          <Protected exact path = "/home" component ={Home} />
+      </Switch>
+    <Footer />
+</div>
+      
+      
   );
 }
 

@@ -5,17 +5,14 @@ import ToggleButton from "react-bootstrap/ToggleButton";
 import Button from "react-bootstrap/Button";
 import "./cards.css";
 
-function MemberShipCards(props) {
+function MemberShipCards() {
   const [radioValue, setRadioValue] = useState("0");
   const radios = [
     { name: "Pay Monthly", value: "0" },
     { name: "Pay yearly", value: "1" }
   ];
 
-  function handleSignUp() {
-    props.onSignUpChanged();
-  }
-
+ 
 
   const rates = [
     {
@@ -69,7 +66,7 @@ function MemberShipCards(props) {
           
         </div>
 
-        <Button onClick={handleSignUp} className="button-getstart" variant="success">Get started</Button>
+        <Button  href="/login"  className="button-getstart" variant="success">Get started</Button>
         <br />
         
       </div>
@@ -123,7 +120,7 @@ function MemberShipCards(props) {
          
         </div>
 
-        <Button onClick={handleSignUp} className="button-getstart" variant="success">Get started</Button>
+        <Button href="/login" className="button-getstart" variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
@@ -184,7 +181,7 @@ function MemberShipCards(props) {
        
         </div>
 
-        <Button onClick={handleSignUp} className="button-getstart" style={{marginTop: "-12px"}} variant="success">Get started</Button>
+        <Button  href="/login"  className="button-getstart" style={{marginTop: "-12px"}} variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
@@ -246,7 +243,7 @@ function MemberShipCards(props) {
          
         </div>
 
-        <Button onClick={handleSignUp} className="button-getstart" variant="success">Get started</Button>
+        <Button  href="/login"  className="button-getstart" variant="success">Get started</Button>
         <div style={{ fontSize: "10px", color: "#cfcfcf", padding: "2%", textAlign:"center" }}>
           No Credit Card Required
         </div>
