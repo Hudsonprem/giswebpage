@@ -5,7 +5,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 const Home = (props) => {
     const [json , setJson]  = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:3001/api/getall",
+        axios.get("https://obscure-wave-01555.herokuapp/api/getall",
         {
             headers : {"auth": `${ JSON.parse(localStorage.getItem("auth"))}` }
         })
@@ -35,7 +35,7 @@ const Home = (props) => {
             <button style={{width:"100%"}} onClick = {()=>
             {
                 localStorage.clear();
-                props.history.push('/login');
+                props.history.push('/giswebpage/login');
 
             }} className="btn btn-primary" > Logout</button>
         </div>

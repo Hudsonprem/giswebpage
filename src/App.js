@@ -37,10 +37,10 @@ function App() {
     <div >
     <Navbar />
    <Switch >
-          <Route exact path = "/" component ={Main} />
-          <Route exact path = "/login" component ={Login} />
-          <Route exact path = "/Register" component ={SignUp} />
-          <Protected exact path = "/home" component ={Home} />
+          <Route exact path = "/giswebpage/" component ={Main} />
+          <Route exact path = "/giswebpage/login" component ={Login} />
+          <Route exact path = "/giswebpage/Register" component ={SignUp} />
+          <Protected exact path = "/giswebpage/home" component ={Home} />
       </Switch>
     <Footer />
 </div>
