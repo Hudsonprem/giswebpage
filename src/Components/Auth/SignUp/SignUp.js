@@ -41,7 +41,7 @@ function SignUp(props) {
 
         }),
         onSubmit: (userInputData)=>{
-            axios.post("http://localhost:3001/api/register",userInputData)
+            axios.post("https://obscure-wave-01555.herokuapp.com/api/register",userInputData)
             .then(res => {
                toast.success("successfully register");
                 props.history.push('/login')

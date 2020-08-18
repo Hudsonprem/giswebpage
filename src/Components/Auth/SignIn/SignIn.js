@@ -23,7 +23,7 @@ function Login(props) {
             
         }),
         onSubmit: (userInputData)=>{
-            axios.post("http://localhost:3001/api/login", userInputData)
+            axios.post("https://obscure-wave-01555.herokuapp.com/api/login", userInputData)
                 .then (response => {
                         localStorage.setItem('auth',JSON.stringify(response.data)); 
                         props.history.push('/home'); 

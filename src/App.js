@@ -12,7 +12,6 @@ import SignUp from "./Components/Auth/SignUp/SignUp";
 import Navbar from "./Components/nav-bar/Navbar";
 import Footer from "./Components/footer/Footer";
 import Afeatures from "./Components/Afeatures/AFeatures";
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Protected from "./Components/Auth/ProtectorFiles/protected";
