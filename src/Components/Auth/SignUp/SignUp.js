@@ -43,8 +43,8 @@ function SignUp(props) {
         onSubmit: (userInputData)=>{
             axios.post("https://obscure-wave-01555.herokuapp.com/api/register",userInputData)
             .then(res => {
-               toast.success("successfully register");
-                props.history.push('/login')
+               toast.success("successfully register please verify user email address");
+                props.history.push('/giswebpage/login')
 
             }) 
             .catch(err =>{
@@ -133,7 +133,7 @@ function SignUp(props) {
 
                 <button type="submit" className="btn btn-success btn-block" >Sign Up</button>
                 <p className="forgot-password text-right">
-                    Already registered <a href="/login" >sign in?</a>
+                    Already registered <a href="/giswebpage/login" >sign in?</a>
                 </p>
             </form>
             </div>

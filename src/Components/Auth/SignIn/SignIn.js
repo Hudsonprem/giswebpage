@@ -26,7 +26,7 @@ function Login(props) {
             axios.post("https://obscure-wave-01555.herokuapp.com/api/login", userInputData)
                 .then (response => {
                         localStorage.setItem('auth',JSON.stringify(response.data)); 
-                        props.history.push('/home'); 
+                        props.history.push('/giswebpage/home'); 
                     })
                 .catch(err =>        
                     toast.error(err.response.data)
@@ -73,7 +73,7 @@ function Login(props) {
 
                 <button type="submit"   className="btn btn-success btn-block">Submit</button>
                 <p className="forgot-password text-center">
-                New to GeoWebMap? <a href="/register" >SIGN UP</a>
+                New to GeoWebMap? <a href="/giswebpage/register" >SIGN UP</a>
                 </p>
             </form>
         </div>

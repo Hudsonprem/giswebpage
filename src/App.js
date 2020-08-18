@@ -38,9 +38,9 @@ function App() {
     <Navbar />
    <Switch >
           <Route exact path = "/giswebpage/" component ={Main} />
-          <Route exact path = "/login" component ={Login} />
-          <Route exact path = "/register" component ={SignUp} />
-          <Protected exact path = "/home" component ={Home} />
+          <Route exact path = "/giswebpage/login" component ={Login} />
+          <Route exact path = "/giswebpage/register" component ={SignUp} />
+          <Protected exact path = "/giswebpage/home" component ={Home} />
       </Switch>
     <Footer />
 </div>
