@@ -32,7 +32,7 @@ function Navbar() {
      <nav>
         <ul className = "menu">
             <li className="logo"> <img className="main-icon" src={require("./gwm_web_white.svg")} alt="img" /></li>
-            <li className="items"> <Link to="/"> Home </Link>       </li>
+            <li className="items"> <Link to="/giswebpage/"> Home </Link>       </li>
             <li className="items"> <a href="#Plans">  FEATURES </a> </li>
             <li className="items"> <a href="#Plans"> PLANS & PRICING</a></li>
             <li className="items"> <a href="#"> BLOG</a>       </li>

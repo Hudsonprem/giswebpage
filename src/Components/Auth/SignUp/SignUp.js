@@ -44,7 +44,7 @@ function SignUp(props) {
             axios.post("https://obscure-wave-01555.herokuapp.com/api/register",userInputData)
             .then(res => {
                toast.success("successfully register");
-                props.history.push('/giswebpage/login')
+                props.history.push('/login')
 
             }) 
             .catch(err =>{

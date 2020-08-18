@@ -14,7 +14,7 @@ function Protected({component , ...rest}) {
                             <RenderComponents {...props} />
                         ) : (
                             <Redirect to={{
-                                pathname:"giswebpage/login"
+                                pathname:"login"
                             }} />
                         )
                         

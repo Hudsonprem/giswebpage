@@ -26,7 +26,7 @@ function Login(props) {
             axios.post("https://obscure-wave-01555.herokuapp.com/api/login", userInputData)
                 .then (response => {
                         localStorage.setItem('auth',JSON.stringify(response.data)); 
-                        props.history.push('/giswebpage/home'); 
+                        props.history.push('/home'); 
                     })
                 .catch(err =>        
                     toast.error(err.response.data)
