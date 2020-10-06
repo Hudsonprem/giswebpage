@@ -239,3 +239,8 @@ h2  {
     grid-area: 4/1/5/2;
   }
 }
+
+
+.get-started:hover{
+  text-decoration: none;
+}

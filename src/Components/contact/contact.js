@@ -12,7 +12,7 @@ function Contact() {
         We offer custom GeoWebMap installations where the platform can be
         deployed in your own infrastructure or on any cloud platform. For custom
         installations and pricing details send us your requirements to
-        <a href="#"> contact@geowebmap.com</a> and will revert back immediately.
+        <a href="#contact"> contact@geowebmap.com</a> and will revert back immediately.
       </div>
     </div>
   );

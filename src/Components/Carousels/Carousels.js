@@ -2,52 +2,56 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import "./carousels.css";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
+import { Link } from "react-router-dom";
 
  
 function Carouselbox()  {
 
 
     return (    
-
-        <Carousel showArrows={false} showStatus={false} showThumbs={false} dynamicHeight={false}>
+ <Carousel showArrows={false} showStatus={false} showThumbs={false} dynamicHeight={false}>
               
                 <div className="main">
-                <Container>
-                    <Row>
-                        <Col className="content" sm={12} lg={6} xs={{ order: 'last' }} sm={{ order: 'last' }} lg={{ order: 'first' }}>Web <b>MAPPING</b> made simple for any domain<br /><br /><a className="buts" href="/register"> SIGN UP FOR FREE</a></Col>
-                        <Col sm={12} lg={6} ><img src={require("./carousel.svg")} alt="hello" height="300" /></Col>
-                    </Row>
-                </Container>                   
+                <div className="d-flex justify-content-around p-5 gallary-box">
+                    <div className=" align-self-center content">
+                         <b>MAPPING</b> made simple for any domain<br /><br />  <Link to="/giswebpage/register" className="buts"> SIGN UP FOR FREE</Link> 
+                     </div>
+                    <div>
+                    <img src={require("./carousel.svg")} alt="hello" height="300" />
+                    </div>
+                </div>                   
                 </div>
 
                 <div className="main">
-                <Container>
-                    <Row>
-                        <Col className="content" sm={12} lg={6} xs={{ order: 'last' }} sm={{ order: 'last' }} lg={{ order: 'first' }}>Configurable <b>MAP INTERFACE</b> and <b>TOOLS</b><br /><br /><a className="buts" href="/register"> SIGN UP FOR FREE</a></Col>
-                        <Col sm={12} lg={6} ><img src={require("./Carousel1.svg")} alt="hello" height="300" /></Col>
-                    </Row>
-                </Container>    
+                <div className="d-flex justify-content-center p-5 gallary-box">
+                    <div className=" align-self-center content">
+                    Configurable <b>MAP INTERFACE</b> and <b>TOOLS</b><br /><br />  <Link to="/giswebpage/register" className="buts"> SIGN UP FOR FREE</Link>
+                     </div>
+                    <div>
+                    <img src={require("./Carousel1.svg")} alt="hello" height="300" />
+                    </div>
+                </div>     
                 </div>
 
                 <div className="main ">
-                <Container>
-                    <Row>
-                        <Col className="content" sm={12} lg={6} xs={{ order: 'last' }} sm={{ order: 'last' }} lg={{ order: 'first' }}>Publish your <b>MAP DATA</b> to web and make it available for public/private users<br /><br /><a className="buts" href="/register"> SIGN UP FOR FREE</a></Col>
-                        <Col sm={12} lg={6} ><img src={require("./Carousel2.svg")} alt="hello" height="300" /></Col>
-                    </Row>
-                </Container>    
+                <div className="d-flex justify-content-center p-5 gallary-box">
+                    <div className=" align-self-center content">
+                    Publish your <b>MAP DATA</b> to web and make it available for public/private users<br /><br />  <Link to="/giswebpage/register" className="buts"> SIGN UP FOR FREE</Link>  </div>
+                    <div>
+                    <img src={require("./Carousel2.svg")} alt="hello" height="300" />
+                    </div>
+                </div>     
                 </div>
 
                 <div className="main">
-                <Container>
-                    <Row>
-                        <Col className="content" sm={12} lg={6} xs={{ order: 'last' }} sm={{ order: 'last' }} lg={{ order: 'first' }}>Perform Analysis on your <b>LOCATION DATA</b> with ease to obtain meaningful business insights<br /><br /><a className="buts" href="/register"> SIGN UP FOR FREE</a></Col>
-                        <Col sm={12} lg={6} ><img src={require("./Carousel3.svg")} alt="hello" height="300" /></Col>
-                    </Row>
-                </Container> 
+                <div className="d-flex justify-content-center p-5 gallary-box" >
+                    <div className=" align-self-center content">
+                    Perform Analysis on your <b>LOCATION DATA</b> with ease to obtain meaningful business insights<br /><br />  <Link to="/giswebpage/register" className="buts"> SIGN UP FOR FREE</Link>  </div>
+                    <div>
+                    <img src={require("./Carousel3.svg")} alt="hello" height="300" />
+                    </div>
+                </div>  
                 </div> 
         </Carousel>
 

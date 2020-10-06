@@ -35,7 +35,7 @@ function Navbar() {
             <li className="items"> <Link to="/giswebpage/"> Home </Link>       </li>
             <li className="items"> <a href="/giswebpage/#AFeature">  FEATURES </a> </li>
             <li className="items"> <a href="/giswebpage/#Plans"> PLANS & PRICING</a></li>
-            <li className="items"> <a href="/giswebpage/#"> BLOG</a>       </li>
+            <li className="items"> <a href="https://myepicbook.netlify.app/"> BLOG</a>       </li>
             <li className="items button " ><Link to="/giswebpage/login"> SIGN In </Link>   </li>
             <li className="items button secondary" ><Link to="/giswebpage/register">  SIGN UP </Link>    </li>
             <li className="toggle"> <span className="bars">  </span></li>

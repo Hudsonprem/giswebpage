@@ -1,9 +1,11 @@
-import React,{ useState } from "react";
+import React from "react";
 import "./signIn.css";
 import axios from "axios";
 import {  ToastContainer , toast } from "react-toastify";
 import { useFormik } from "formik";
 import * as yup from "yup";
+
+import { Link } from "react-router-dom";
 
 function Login(props) {
   
@@ -73,7 +75,7 @@ function Login(props) {
 
                 <button type="submit"   className="btn btn-success btn-block">Submit</button>
                 <p className="forgot-password text-center">
-                New to GeoWebMap? <a href="/giswebpage/register" >SIGN UP</a>
+                New to GeoWebMap?  <Link to="/giswebpage/register"> SIGN UP</Link>
                 </p>
             </form>
         </div>

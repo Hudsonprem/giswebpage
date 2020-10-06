@@ -36,4 +36,15 @@
     text-decoration: none;
 }
 
-
+@media only screen and (max-width: 768px) {
+    .gallary-box{
+        flex-direction: column-reverse;
+    }
+    .buts{
+        font-size: 10px;
+    }
+    .content{
+        padding: 0px;
+        
+    }
+}

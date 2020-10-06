@@ -6,6 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
+import { Link } from "react-router-dom";
+
 
 function SignUp(props) {
 
@@ -133,7 +135,7 @@ function SignUp(props) {
 
                 <button type="submit" className="btn btn-success btn-block" >Sign Up</button>
                 <p className="forgot-password text-right">
-                    Already registered <a href="/giswebpage/login" >sign in?</a>
+                    Already registered <Link to="/giswebpage/login"> sign in?</Link>
                 </p>
             </form>
             </div>
